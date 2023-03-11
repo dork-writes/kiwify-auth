@@ -38,7 +38,7 @@ function App() {
       setCerr('');
       setLoc(location.pathname)
     }
-    document.title = location.pathname === '/kiwify-auth' ? 'Login' : 'Cadastro';
+    document.title = location.pathname === '/kiwify-auth' || location.pathname === "/kiwify-auth/" ? 'Login' : 'Cadastro';
   }, [location, loc])
 
   const handleSubmit = (e) =>
