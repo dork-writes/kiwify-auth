@@ -22,7 +22,7 @@ function App() {
 
   useEffect(()=>
   {
-    if (location !== loc)
+    if (location.pathname !== loc)
     {
       setEmail('');
       setPassword('');
@@ -36,8 +36,9 @@ function App() {
       setMatch('');
       setChecked(false);
       setCerr('');
-      location === '/' ? setLoc('/') : setLoc('/signup'); 
+      setLoc(location.pathname)
     }
+    document.title = location.pathname === '/kiwify-auth' ? 'Login' : 'Cadastro';
   }, [location, loc])
 
   const handleSubmit = (e) =>
@@ -80,7 +81,6 @@ function App() {
   const changeEmail = (e) =>
   {
     setEmail(e.currentTarget.value);
-    console.log(em);
     if (em !== 0)
     {
         if (e.currentTarget.value === "")
@@ -146,7 +146,6 @@ const changeChecked = (e) =>
 const changePassword = (e) =>
 {
     setPassword(e.currentTarget.value);
-    console.log(p);
     if (p !== 0)
     {
         if (e.currentTarget.value === "")
