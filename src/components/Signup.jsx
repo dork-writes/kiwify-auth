@@ -47,7 +47,7 @@ export default function Signup({ email, perr, password, setE, setP, eerr, change
                                 Repetir e-mail
                             </label>
                                 <div> <input onFocus={() => setRE(1)} value={repEmail} onChange={changeRepemail} onBlur = {changeRepemail} type="email" autoComplete="off" name="null"
-                                    className={`form-input block py-2 px-3 border ${rerr.length ? 'border-red-500': 'border-gray-300'} rounded-md shadow-sm focus:outline-none focus:shadow-outline-blue focus:border-blue-300 transition duration-150 ease-in-out sm:text-sm sm:leading-5 w-full`} />
+                                    className={`form-input block py-2 px-3 border ${rerr.length || match.length ? 'border-red-500': 'border-gray-300'} rounded-md shadow-sm focus:outline-none focus:shadow-outline-blue focus:border-blue-300 transition duration-150 ease-in-out sm:text-sm sm:leading-5 w-full`} />
                                 <p className="text-xs text-red-500 pt-1">{match}</p>
                                 <p className="text-xs text-red-500">{rerr}</p>
                                 </div>
