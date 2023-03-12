@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/kiwify-auth/static/css/main.9506cafc.css",
-    "main.js": "/kiwify-auth/static/js/main.5cd28c15.js",
+    "main.js": "/kiwify-auth/static/js/main.3ada9002.js",
     "static/js/787.064213a2.chunk.js": "/kiwify-auth/static/js/787.064213a2.chunk.js",
     "static/media/logo.png": "/kiwify-auth/static/media/logo.2af0e504c88e8c6147af.png",
     "index.html": "/kiwify-auth/index.html",
     "main.9506cafc.css.map": "/kiwify-auth/static/css/main.9506cafc.css.map",
-    "main.5cd28c15.js.map": "/kiwify-auth/static/js/main.5cd28c15.js.map",
+    "main.3ada9002.js.map": "/kiwify-auth/static/js/main.3ada9002.js.map",
     "787.064213a2.chunk.js.map": "/kiwify-auth/static/js/787.064213a2.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.9506cafc.css",
-    "static/js/main.5cd28c15.js"
+    "static/js/main.3ada9002.js"
   ]
 }
